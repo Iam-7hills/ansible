@@ -1,6 +1,11 @@
 ANSIBLE Installation and creating the inventory file
 ======================================================
 
+Pre-requisite:
+==============
+	Create user id and make sure that ssh is working from control plane 
+ 	example from control plane : ssh <managed-node>
+
 Step 1 - Install Ansible:
 =========================
 	sudo yum install epel-release
