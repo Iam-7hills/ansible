@@ -42,27 +42,27 @@ step 3 - hosts and ansible.cfg under ansible installed folder:
 	[default]
 	inventory=/etc/ansible/hosts
 
-Step 4:
-========
+Step 4 - Precheck ansible - This step will throw error and expected:
+====================================================================
 
-verify the ping pong
+	verify the ping pong
 
-ansible all -m ping
-
-
-step 5:
--------------
-
-ssh-keygen -t ed25519 -C "Ansible"
-
-ssh-copy-id -i ~/.ssh/ansible_control.pub server1
-ssh-copy-id -i ~/.ssh/ansible_control.pub server2
-ssh-copy-id -i ~/.ssh/ansible_control.pub server3
+	ansible all -m ping
 
 
-Step5:
------
+step 5 - Generate Keygen and copy the pub file in all the targeted servers:
+==========================================================================
 
-Test Connection
+	ssh-keygen -t ed25519 -C "Ansible"
 
-ansible all --key-file ansible_control -m ping
+	ssh-copy-id -i ~/.ssh/ansible_control.pub server1
+	ssh-copy-id -i ~/.ssh/ansible_control.pub server2
+	ssh-copy-id -i ~/.ssh/ansible_control.pub server3
+
+
+Step5 - Verify test connection
+===============================
+
+	Test Connection
+
+	ansible all --key-file ansible_control -m ping
