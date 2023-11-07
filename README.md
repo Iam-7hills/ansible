@@ -33,7 +33,7 @@ step 3 - hosts and ansible.cfg under ansible installed folder:
 	1. hosts
 	2. ansible.cfg
 
-	vi /etc/ansible/hosts
+	sudo vi /etc/ansible/hosts
 
 	###   add below lines
 
@@ -41,7 +41,7 @@ step 3 - hosts and ansible.cfg under ansible installed folder:
 	server2
 	server3
 
-	vi /ect/ansible/ansible.cfg:
+	sudo vi /ect/ansible/ansible.cfg:
 
 	## add below lines
 
@@ -60,6 +60,8 @@ step 5 - Generate Keygen and copy the pub file in all the targeted servers:
 ==========================================================================
 
 	ssh-keygen -t ed25519 -C "Ansible"
+
+	path to provide : /home/ansible/.ssh/ansible_control
 
 	ssh-copy-id -i ~/.ssh/ansible_control.pub server1
 	ssh-copy-id -i ~/.ssh/ansible_control.pub server2
