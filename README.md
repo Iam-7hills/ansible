@@ -1,4 +1,4 @@
-# ansible
+**ANSIBLE Installation and creating the inventory file**
 
 Step 1 - Install Ansible:
 =========================
