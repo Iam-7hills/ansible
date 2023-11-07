@@ -67,10 +67,16 @@ step 5 - Generate Keygen and copy the pub file in all the targeted servers:
 	ssh-copy-id -i ~/.ssh/ansible_control.pub server2
 	ssh-copy-id -i ~/.ssh/ansible_control.pub server3
 
+ 	Validate - if you can do ssh without asking password
+
+  	ssh -i ~/.ssh/ansible_control server1
+   	ssh -i ~/.ssh/ansible_control server2
+    	ssh -i ~/.ssh/ansible_control server3
+
 
 Step5 - Verify test connection
 ===============================
 
-	Test Connection
+	Test Connection - By running ansible command
 
 	ansible all --key-file ansible_control -m ping
