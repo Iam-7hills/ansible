@@ -1,27 +1,24 @@
 # ansible
 
-**Step 1:
---------**
-Install ansible
-
+Step 1 - Install Ansible:
+=========================
 sudo yum install epel-release
 sudo yum install ansible
 
-
-Step 2:
-========
+Step 2 - Modify /etc/hosts:
+===========================
 	sudo vi /etc/hosts
 
 	# Add the list of IP and host
 	example:
 
 	<ip> <hostname>
-192.168.86.245 server1
-192.168.86.246 server2
-192.168.86.248 server3
+	192.168.86.245 server1
+	192.168.86.246 server2
+	192.168.86.248 server3
 
-step 3:
-========
+step 3 - hosts and ansible.cfg under ansible installed folder:
+============================================================
 
 	cd /etc/ansible
 
