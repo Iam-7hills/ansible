@@ -2,8 +2,8 @@
 
 Step 1 - Install Ansible:
 =========================
-sudo yum install epel-release
-sudo yum install ansible
+	sudo yum install epel-release
+	sudo yum install ansible
 
 Step 2 - Modify /etc/hosts:
 ===========================
@@ -31,16 +31,16 @@ step 3 - hosts and ansible.cfg under ansible installed folder:
 
 	###   add below lines
 
-server1
-server2
-server3
+	server1
+	server2
+	server3
 
-vi /ect/ansible/ansible.cfg:
+	vi /ect/ansible/ansible.cfg:
 
 	## add below lines
 
-[default]
-inventory=/etc/ansible/hosts
+	[default]
+	inventory=/etc/ansible/hosts
 
 Step 4:
 ========
