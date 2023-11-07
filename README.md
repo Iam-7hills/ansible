@@ -41,7 +41,7 @@ step 3 - hosts and ansible.cfg under ansible installed folder:
 	server2
 	server3
 
-	sudo vi /ect/ansible/ansible.cfg:
+	sudo vi /etc/ansible/ansible.cfg:
 
 	## add below lines
 
