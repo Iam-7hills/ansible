@@ -8,7 +8,7 @@ cat ansible.cfg
 
 inventory=/etc/ansible/hosts  **// This is your inventory file**
 
-Create your own Inventory
+1. Create your own Inventory
 ==========================
 [ansible@iam7hills firstplaybook]$ cat firstinventory
 
@@ -20,7 +20,7 @@ server3
 
 ansible all --key-file /home/ansible/.ssh/ansible_control **-i firstinventory** -m ping
 
-How to create your own ansible.cfg and store all your inventory and private key file
+2. How to create your own ansible.cfg and store all your inventory and private key file
 =====================================================================================
 vi ansible.cfg
 
@@ -36,7 +36,7 @@ but the new file will take the precedence
 
 ansible all -m ping
 
-Now it's time to create your first playbook
+3. Now it's time to create your first playbook
 ===========================================
 vi firstplay.yaml
 
