@@ -36,3 +36,5 @@ but the new file will take the precedence
 
 ansible all -m ping
 
+Now it's time to create your first playbook
+===========================================
