@@ -25,5 +25,10 @@ How to create your own ansible.cfg and store all your inventory and private key 
 vi ansible.cfg
 
 [defaults]
+
 inventory = firstinventory
+
 private_key_file = /home/ansible/.ssh/ansible_control
+
+**But you will have the ansible.cfg file already that comes as part of your installation**
+
