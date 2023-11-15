@@ -3,10 +3,10 @@ Default inventory file
 cd /etc/ansible/
 
 cat ansible.cfg
-[default]
-inventory=/etc/ansible/hosts  **// This is your inventory file**
 
-host_key_checking = False
+[default]
+
+inventory=/etc/ansible/hosts  **// This is your inventory file**
 
 Create your own Inventory
 =============================================
