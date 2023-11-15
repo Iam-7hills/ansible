@@ -42,7 +42,9 @@ vi firstplay.yaml
 
 
 ---
+
  - hosts: all
+   
    tasks:
      - name: install nginx
   
