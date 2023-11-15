@@ -1,16 +1,19 @@
 Default inventory file
 ======================
-cd /home/ansible/.ssh
+cd /etc/ansible/
 
-ansible all --key-file ansible_control -m ping
+cat ansible.cfg
+[default]
+inventory=/etc/ansible/hosts  // This is your inventory file
+host_key_checking = False
 
-**How to avoid giving --key-file in the CLI**
+Create your own Inventory
 =============================================
-First locate your inventory file, in my case
+[ansible@iam7hills firstplaybook]$ cat firstinventory
+server1
 
-inventory path : /etc/ansible/ansible.cfg
+server2
 
+server3
 
-export host_key_checking = False
-
-or add a new line to cfg file
+ansible all --key-file /home/ansible/.ssh/ansible_control -i firstinventory -m ping
