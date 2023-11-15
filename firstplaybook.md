@@ -17,4 +17,4 @@ server2
 
 server3
 
-ansible all --key-file /home/ansible/.ssh/ansible_control -i firstinventory -m ping
+ansible all --key-file /home/ansible/.ssh/ansible_control **-i firstinventory** -m ping
