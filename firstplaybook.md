@@ -10,6 +10,7 @@ First locate your inventory file, in my case
 
 inventory path : /etc/ansible/ansible.cfg
 
+
 export host_key_checking = False
 
 or add a new line to cfg file
