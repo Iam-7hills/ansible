@@ -38,3 +38,14 @@ ansible all -m ping
 
 Now it's time to create your first playbook
 ===========================================
+vi firstplay.yaml
+---
+
+- hosts: all
+  tasks:
+    - name: install nginx
+      debug:
+        msg: Hello World
+
+      **To run a playbook : ansible-playbook firstplay.yaml**
+
