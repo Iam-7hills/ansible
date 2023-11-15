@@ -32,3 +32,7 @@ private_key_file = /home/ansible/.ssh/ansible_control
 
 **But you will have the ansible.cfg file already that comes as part of your installation**
 
+but the new file will take the precedence
+
+ansible all -m ping
+
