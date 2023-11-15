@@ -19,3 +19,11 @@ server2
 server3
 
 ansible all --key-file /home/ansible/.ssh/ansible_control **-i firstinventory** -m ping
+
+How to create your own ansible.cfg and store all your inventory and private key file
+=====================================================================================
+vi ansible.cfg
+
+[defaults]
+inventory = firstinventory
+private_key_file = /home/ansible/.ssh/ansible_control
