@@ -1,5 +1,5 @@
-Default inventory file
-======================
+Default configuration and inventory file
+========================================
 cd /etc/ansible/
 
 cat ansible.cfg
@@ -9,7 +9,7 @@ cat ansible.cfg
 inventory=/etc/ansible/hosts  **// This is your inventory file**
 
 Create your own Inventory
-=============================================
+==========================
 [ansible@iam7hills firstplaybook]$ cat firstinventory
 
 server1
