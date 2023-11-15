@@ -1,4 +1,7 @@
-/home/ansible/.ssh
+Default inventory file
+======================
+cd /home/ansible/.ssh
+
 ansible all --key-file ansible_control -m ping
 
 **How to avoid giving --key-file in the CLI**
