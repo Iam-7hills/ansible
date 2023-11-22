@@ -32,4 +32,4 @@ Sample yaml
 
   How to run a playbook
   =====================
-  ansible-playbook --ask-become-pass becomeuser.yaml
+  ansible-playbook --ask-become-pass becomeuser.yaml  // -K is the shortcut for --ask-become-pass
