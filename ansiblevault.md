@@ -33,3 +33,13 @@ Now, do cat and check the content in the password.yaml.. You will see it is in e
 you can also, create your own encryption file for the very first time like this, 
 
 **ansible-vault create password1.yaml**
+
+**SOME USEFUL commands**
+
+ansible-vault view password1.yaml
+ansible-vault edit password1.yaml
+ansible-vault decrypt password1.yaml
+ansible-vault rekey password1.yaml
+
+
+STEP 3: 
