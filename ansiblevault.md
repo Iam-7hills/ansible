@@ -7,7 +7,6 @@ STEP 1: First create the password in a plaintext
 cat password.yaml
 
    --- // first line
-   
    db_pass: "oracle-password" //password in plain text , which will be encrypted and substituted in the playbook.yaml
 
    **Sample playbook file and where we are substituting the password as a variable**
@@ -37,9 +36,15 @@ you can also, create your own encryption file for the very first time like this,
 **SOME USEFUL commands**
 
 ansible-vault view password1.yaml
+
 ansible-vault edit password1.yaml
+
 ansible-vault decrypt password1.yaml
+
 ansible-vault rekey password1.yaml
 
 
-STEP 3: 
+STEP 3: Apply secrets variable from password.yaml to playbook.yaml
+==================================================================
+
+ansible-playbook -e @password.yaml --ask-vault-pass vault_playbook.yaml
