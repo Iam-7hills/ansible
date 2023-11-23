@@ -14,7 +14,7 @@ cat password.yaml
 
 [ansible@iam7hills vault]$ cat vault_playbook.yaml
 ---
-- hosts: all
+- hosts: all // run in all the servers mentioned in the inventory
   gather_facts: false
   tasks:
     - name: vault_replace
