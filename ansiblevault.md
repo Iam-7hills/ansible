@@ -43,6 +43,10 @@ ansible-vault decrypt password1.yaml
 
 ansible-vault rekey password1.yaml
 
+If you don't want to enter password during the command execution, then you can store the password in some key file and protect securely
+
+ansible-vault view --vault-password-file key.txt password1.yaml // in this case, the password i have stored it in the key.txt
+
 
 STEP 3: Apply secrets variable from password.yaml to playbook.yaml
 ==================================================================
