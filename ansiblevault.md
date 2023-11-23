@@ -20,3 +20,16 @@ cat password.yaml
     - name: vault_replace
       debug:
         msg: "{{ db_pass }}"
+
+      Execute the command: ansible-playbook -e @password.yaml vault_playbook.yaml // -e help you to pass variables in one yaml to other yaml file
+
+STEP 2: Encrypt the password file password.yaml
+===============================================
+
+ansible-vault encrypt password.yaml  // It will ask you to set a password
+
+Now, do cat and check the content in the password.yaml.. You will see it is in encrypted format.
+
+you can also, create your own encryption file for the very first time like this, 
+
+ansible-vault create password1.yaml
