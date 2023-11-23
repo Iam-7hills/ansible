@@ -4,6 +4,9 @@ ANSIBLE STEP BY STEP PROCESS
 STEP 1: First create the password in a plaintext yaml
 =====================================================
 
+1. password.yaml
+2. vault_playbook.yaml
+
 [ansible@iam7hills vault]$ cat password.yaml
 ---
 db_pass: "oracle-password" //password in plain text , which will be encrypted and substituted in the playbook.yaml (Step2)
@@ -51,3 +54,4 @@ STEP 3: Apply secrets variable from password.yaml to playbook.yaml
 ==================================================================
 
 ansible-playbook -e @password.yaml --ask-vault-pass vault_playbook.yaml
+ansible-playbook -e @password1.yaml --ask-vault-pass vault_playbook.yaml
