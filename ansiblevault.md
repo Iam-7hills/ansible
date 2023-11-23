@@ -1,13 +1,12 @@
 ANSIBLE STEP BY STEP PROCESS
 ============================
 
-STEP 1: First create the password in a plaintext
-=============================================
+STEP 1: First create the password in a plaintext yaml
+=====================================================
 
-cat password.yaml
-
-   --- // first line
-   db_pass: "oracle-password" //password in plain text , which will be encrypted and substituted in the playbook.yaml
+[ansible@iam7hills vault]$ cat password.yaml
+---
+db_pass: "oracle-password" //password in plain text , which will be encrypted and substituted in the playbook.yaml (Step2)
 
    **Sample playbook file and where we are substituting the password as a variable**
 
