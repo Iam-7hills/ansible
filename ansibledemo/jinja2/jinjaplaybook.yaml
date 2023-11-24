@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: install nginx
+      yum:
+        name: nginx
+        state: installed
+
+    - name: jinja2 template replacement
+      template:
+        src: index_html.j2
+        dest: /usr/share/nginx/html/index.html
+
+
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+
