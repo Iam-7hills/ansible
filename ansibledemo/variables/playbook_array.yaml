@@ -1,0 +1,11 @@
+---
+- hosts: all
+  vars:
+    cloud:
+      - aws
+      - azure
+      - gcp
+  tasks:
+  - name: Print Cloud name
+    debug:
+      msg: "{{ cloud[0] }}"

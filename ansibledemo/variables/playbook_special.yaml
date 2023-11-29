@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+  - name: To test magic variable"
+    debug:
+      msg: "{{ ansible_config_file }}"

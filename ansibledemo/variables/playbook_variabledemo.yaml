@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    var1: "To test variable in Ansible"
+  tasks:
+    - name: To install nginx
+      debug:
+        msg: "{{ var1 }}"
