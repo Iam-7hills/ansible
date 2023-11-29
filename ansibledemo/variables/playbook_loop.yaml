@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    services:
+      - httpd
+      - mysql
+  tasks:
+    - name: To install services
+      yum:
+        name: "{{ item }}"
+        state: installed
+      loop: "{{ services }}"
+
+    - name: to remove services
+      yum:
+        name: "{{ item }}"
+        state: absent
+      loop: "{{ services }}"
