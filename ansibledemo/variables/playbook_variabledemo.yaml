@@ -4,6 +4,6 @@
   vars:
     var1: "To test variable in Ansible"
   tasks:
-    - name: To install nginx
+    - name: Inside task 1
       debug:
         msg: "{{ var1 }}"
