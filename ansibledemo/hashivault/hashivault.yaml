@@ -1,8 +1,8 @@
 ---
 - hosts: server1
   vars:
-    vault_token: 'hvs.1Gjzs3fmv6CJZfj5FguffZr7'
-    vault_url: 'http://192.168.86.30:8200'
+    vault_token: '<vault-token>'
+    vault_url: '<ip- need to enter>:8200'
     vault_pass: "{{lookup('hashi_vault', 'secret=secret/data/firstpass:data token={{ vault_token }} url={{ vault_url }}') }}"
   tasks:
   - name: Hashivault integration with Ansible
