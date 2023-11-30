@@ -1,6 +1,7 @@
 STEP 1 : Install Hashi vault
-==========================
+=============================
 **Follow the below commands from Hashi vault tutorial:** https://developer.hashicorp.com/vault/install
+Note : I am using Centos, so I have followed RHEL one,
 
 a.  sudo yum install -y yum-utils
 
