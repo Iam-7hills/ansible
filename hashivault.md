@@ -19,7 +19,32 @@ STEP 3: Create secrets in HASHI VAULT
 
 export VAULT_ADDR='http://enter your ip:8200'
 
-vault kv put secret/password/vaultdemo data=itsasecret
+**To create a secret in HASHI VAULT**: vault kv put secret/password/vaultdemo data=itsasecret
+
+**To retrieve a secret**: vault kv get -mount="secret" "password/vaultdemo"
+
 
 STEP 4: WRITE ANSIBLE playbook
 ===============================
+
+https://github.com/Iam-7hills/ansible/blob/main/ansibledemo/hashivault/hashivault.yaml
+
+---
+- hosts: server1
+  
+  vars:
+  
+    vault_token: '<vault-token>'
+  
+    vault_url: '<ip- need to enter>:8200'
+  
+    vault_pass: "{{lookup('hashi_vault', 'secret=secret/data/firstpass:data token={{ vault_token }} url={{ vault_url }}') }}"
+  
+  tasks:
+  
+  - name: Hashivault integration with Ansible
+    
+    debug:
+    
+      msg: "Retrieve password from Hashivault {{ vault_pass }}"
+    
