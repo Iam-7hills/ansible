@@ -1,6 +1,6 @@
-STEP 1 : Install Hashivault
+STEP 1 : Install Hashi vault
 ==========================
-**Follow the below commands from Hashivault tutorial:** https://developer.hashicorp.com/vault/install
+**Follow the below commands from Hashi vault tutorial:** https://developer.hashicorp.com/vault/install
 
 a.  sudo yum install -y yum-utils
 
@@ -10,11 +10,11 @@ c.  sudo yum -y install vault
 
 **optional** : pip install hvac // for me i got an error while running playbook, so i had to install
 
-STEP 2: START HASHIVAULT
-=======================
+STEP 2: Start Hashi Vault
+=========================
 vault server -dev -dev-listen-address="enter your ip:8200"
 
-STEP 3: Create secrets in HASHI VAULT
+STEP 3: Create secrets in Hashi Vault
 =====================================
 
 export VAULT_ADDR='http://enter your ip:8200'
@@ -26,7 +26,7 @@ export VAULT_ADDR='http://enter your ip:8200'
 **Note:** you can also create secrets from the browser
 
 
-STEP 4: WRITE ANSIBLE playbook
+STEP 4: Write Ansible playbook
 ===============================
 
 https://github.com/Iam-7hills/ansible/blob/main/ansibledemo/hashivault/hashivault.yaml
