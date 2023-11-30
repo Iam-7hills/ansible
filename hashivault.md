@@ -13,3 +13,13 @@ c.  sudo yum -y install vault
 STEP 2: START HASHIVAULT
 =======================
 vault server -dev -dev-listen-address="<ip>:8200"
+
+STEP 3: Create secrets in HASHI VAULT
+=====================================
+
+export VAULT_ADDR='http://<ip-name>:8200'
+
+vault kv put secret/password/vaultdemo data=itsasecret
+
+STEP 4: WRITE ANSIBLE playbook
+===============================
