@@ -38,7 +38,7 @@ https://github.com/Iam-7hills/ansible/blob/main/ansibledemo/hashivault/hashivaul
   
     vault_url: '<ip- need to enter>:8200'
   
-    vault_pass: "{{lookup('hashi_vault', 'secret=secret/data/firstpass:data token={{ vault_token }} url={{ vault_url }}') }}"
+    vault_pass: "{{lookup('hashi_vault', 'secret=secret/password/vaultdemo:data token={{ vault_token }} url={{ vault_url }}') }}"
   
   tasks:
   
