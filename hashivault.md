@@ -23,6 +23,8 @@ export VAULT_ADDR='http://enter your ip:8200'
 
 **To retrieve a secret**: vault kv get -mount="secret" "password/vaultdemo"
 
+**Note:** you can also create secrets from the browser
+
 
 STEP 4: WRITE ANSIBLE playbook
 ===============================
