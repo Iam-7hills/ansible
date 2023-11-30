@@ -47,4 +47,10 @@ https://github.com/Iam-7hills/ansible/blob/main/ansibledemo/hashivault/hashivaul
     debug:
     
       msg: "Retrieve password from Hashivault {{ vault_pass }}"
+
+    STEP 4: Run Playbook
+    ====================
+
+    ansible-playbook hashivault_playbook.yaml
+    
     
