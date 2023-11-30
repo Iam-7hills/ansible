@@ -36,7 +36,7 @@ https://github.com/Iam-7hills/ansible/blob/main/ansibledemo/hashivault/hashivaul
   
   vars:
   
-    vault_token: '<vault-token>'
+    vault_token: 'enter your vault-token'
   
     vault_url: '<ip- need to enter>:8200'
   
